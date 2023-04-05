@@ -30,8 +30,8 @@
 
 / {
     macros {
-        ZMK_MACRO(scope, wait-ms = <30>; tap-ms = <30>; bindings = <&kp COLON &kp COLON>;)
-        ZMK_MACRO(lambda, wait-ms = <30>; tap-ms = <30>; bindings = <&kp L &kp A &kp M &kp B &kp D &kp A>;)
+        ZMK_MACRO(scope, wait-ms = <1>; tap-ms = <1>; bindings = <&kp COLON &kp COLON>;)
+        ZMK_MACRO(lambda, wait-ms = <1>; tap-ms = <1>; bindings = <&kp L &kp A &kp M &kp B &kp D &kp A>;)
     };
 
     combos {
