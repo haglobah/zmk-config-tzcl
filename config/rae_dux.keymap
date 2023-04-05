@@ -8,6 +8,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+#include "../zmk-nodefree-config/helper.h"
+#include "../zmk-nodefree-config/international_chars/greek.dtsi"
+#include "../zmk-nodefree-config/international_chars/german.dtsi"
+
 &sk {
     release-after-ms = <750>;
     quick-release;
@@ -21,6 +25,7 @@
 #define SYM_L   1
 #define NUM_L   2
 #define NAV_L   3
+#define LANG_L  4
 
 #define CUT   LG(X)
 #define COPY  LG(C)
@@ -73,6 +78,8 @@
 
         COMBO(minus, &kp MINUS, 26 27, COMBO_TIME_SLOW)
         COMBO(underscore, &kp UNDER, 22 23, COMBO_TIME_SLOW)
+        
+        COMBO(switch_lang, &sl LANG_L, 6 8, COMBO_TIME_SLOW)
     };
 
     behaviors {
@@ -161,6 +168,18 @@
                    &sk LALT     &sk LGUI      &sk LSHFT     &sk LCTRL          &trans             &trans              &kp LEFT         &kp DOWN                 &kp UP        &kp RIGHT
                    &trans       &kp CUT       &kp COPY      &kp PASTE          &trans             &trans              &kp HOME         &kp K_PREV               &kp K_NEXT    &kp END
 				 /*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans             /*&             &*/
+			>;
+		};
+
+		lang_layer {
+			bindings = <
+                    &trans        &el_omega     &el_phi       &el_pi        &el_beta        &trans        &el_lambda    &el_upsilon   &el_psi       &de_eszett   
+                // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─┤
+                    &el_alpha     &el_rho       &el_sigma     &el_tau       &el_gamma       &el_mu        &el_nu        &el_epsilon   &el_iota      &el_omikron  
+                // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─┤
+                    &el_zeta      &el_xi        &el_chi       &el_delta     &el_theta       &el_kappa     &el_eta       &de_ae        &de_oe        &de_ue       
+                // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯─┤
+                                                &trans        &trans        &trans          &trans        &trans        &trans                                   
 			>;
 		};
 	};
