@@ -53,16 +53,26 @@
           ╰───────╮ 30  31  32 │ │ 33  34  35 ╭───────╯
                   ╰────────────╯ ╰────────────╯        */
 
-        COMBO(caps_word_left, &caps_word, 13 14, 60)
-        COMBO(caps_word_right, &caps_word, 15 16, 60)
+        #define COMBO_TIME_SLOW 35
 
-        COMBO(grave, &kp GRAVE, 1 2, 60)
-        COMBO(colon, &kp COLON, 7 8, 60)
-        COMBO(equal, &kp EQUAL, 21 22, 60)
-        COMBO(semicolon, &kp SEMI, 27 28, 60)
+        COMBO(caps_word_left, &caps_word, 13 14, COMBO_TIME_SLOW)
+        COMBO(caps_word_right, &caps_word, 15 16, COMBO_TIME_SLOW)
 
-        COMBO(minus, &kp MINUS, 31 34, 60)
-        COMBO(underscore, &kp UNDER, 32 33, 60)
+        COMBO(grave, &kp GRAVE, 1 2, COMBO_TIME_SLOW)
+        COMBO(scope, &scope, 6 7, COMBO_TIME_SLOW)
+        COMBO(colon, &kp COLON, 7 8, COMBO_TIME_SLOW)
+        COMBO(equal, &kp EQUAL, 21 22, COMBO_TIME_SLOW)
+        COMBO(semicolon, &kp SEMI, 27 28, COMBO_TIME_SLOW)
+
+        COMBO(lpar, &kp LPAR, 11 12, COMBO_TIME_SLOW)
+        COMBO(rpar, &kp RPAR, 17 18, COMBO_TIME_SLOW)
+        COMBO(lbkt, &kp LBKT, 12 13, COMBO_TIME_SLOW)
+        COMBO(rbkt, &kp RBKT, 16 17, COMBO_TIME_SLOW)
+        COMBO(lbrc, &kp LBRC, 10 11, COMBO_TIME_SLOW)
+        COMBO(rbrc, &kp RBRC, 18 19, COMBO_TIME_SLOW)
+
+        COMBO(minus, &kp MINUS, 26 27, COMBO_TIME_SLOW)
+        COMBO(underscore, &kp UNDER, 22 23, COMBO_TIME_SLOW)
     };
 
     behaviors {
