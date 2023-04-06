@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+#define HOST_OS 1
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/international_chars/greek.dtsi"
 #include "../zmk-nodefree-config/international_chars/german.dtsi"
@@ -58,28 +59,28 @@
           ╰───────╮ 30  31  32 │ │ 33  34  35 ╭───────╯
                   ╰────────────╯ ╰────────────╯        */
 
-        #define COMBO_TIME_SLOW 35
+        #define COMBO_TIME 20
 
-        COMBO(caps_word_left, &caps_word, 13 14, COMBO_TIME_SLOW)
-        COMBO(caps_word_right, &caps_word, 15 16, COMBO_TIME_SLOW)
+        COMBO(caps_word_left, &caps_word, 13 14, COMBO_TIME)
+        COMBO(caps_word_right, &caps_word, 15 16, COMBO_TIME)
 
-        COMBO(grave, &kp GRAVE, 1 2, COMBO_TIME_SLOW)
-        COMBO(scope, &scope, 6 7, COMBO_TIME_SLOW)
-        COMBO(colon, &kp COLON, 7 8, COMBO_TIME_SLOW)
-        COMBO(equal, &kp EQUAL, 21 22, COMBO_TIME_SLOW)
-        COMBO(semicolon, &kp SEMI, 27 28, COMBO_TIME_SLOW)
+        COMBO(grave, &kp GRAVE, 1 2, COMBO_TIME)
+        COMBO(scope, &scope, 6 7, COMBO_TIME)
+        COMBO(colon, &kp COLON, 7 8, COMBO_TIME)
+        COMBO(equal, &kp EQUAL, 21 22, COMBO_TIME)
+        COMBO(semicolon, &kp SEMI, 27 28, COMBO_TIME)
 
-        COMBO(lpar, &kp LPAR, 11 12, COMBO_TIME_SLOW)
-        COMBO(rpar, &kp RPAR, 17 18, COMBO_TIME_SLOW)
-        COMBO(lbkt, &kp LBKT, 12 13, COMBO_TIME_SLOW)
-        COMBO(rbkt, &kp RBKT, 16 17, COMBO_TIME_SLOW)
-        COMBO(lbrc, &kp LBRC, 10 11, COMBO_TIME_SLOW)
-        COMBO(rbrc, &kp RBRC, 18 19, COMBO_TIME_SLOW)
+        COMBO(lpar, &kp LPAR, 11 12, COMBO_TIME)
+        COMBO(rpar, &kp RPAR, 17 18, COMBO_TIME)
+        COMBO(lbkt, &kp LBKT, 12 13, COMBO_TIME)
+        COMBO(rbkt, &kp RBKT, 16 17, COMBO_TIME)
+        COMBO(lbrc, &kp LBRC, 11 13, COMBO_TIME)
+        COMBO(rbrc, &kp RBRC, 16 18, COMBO_TIME)
 
-        COMBO(minus, &kp MINUS, 26 27, COMBO_TIME_SLOW)
-        COMBO(underscore, &kp UNDER, 22 23, COMBO_TIME_SLOW)
+        COMBO(minus, &kp MINUS, 26 27, COMBO_TIME)
+        COMBO(underscore, &kp UNDER, 22 23, COMBO_TIME)
         
-        COMBO(switch_lang, &sl LANG_L, 6 8, COMBO_TIME_SLOW)
+        COMBO(switch_lang, &sl LANG_L, 6 8, COMBO_TIME)
     };
 
     behaviors {
