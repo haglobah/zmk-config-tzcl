@@ -75,3 +75,7 @@ Number layer:
 
 Nav layer:
 + The mods on the left-hand are sticky, so I can hit them and combine them with keys on other layers
+
+Lang layer:
++ A greek and german one-shot layer, that I can access by pressing 'x' and 'd' at the same time. 
++ The chars on the shifts are moved outwards, so that I can still use them in caps.
