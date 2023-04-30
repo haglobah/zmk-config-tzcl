@@ -175,9 +175,9 @@
 
 		lang_layer {
 			bindings = <
-                    &el_sigma     &el_omega     &el_phi       &el_pi        &el_beta        &el_nu        &el_lambda    &el_upsilon   &el_psi       &de_eszett   
+                    &el_sigma     &el_omega     &el_phi       &el_pi        &el_beta        &el_epsilon   &el_lambda    &el_upsilon   &el_psi       &de_eszett   
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─┤
-                    &el_alpha     &el_rho       &trans        &el_tau       &el_gamma       &el_mu        &trans        &el_epsilon   &el_iota      &el_omikron  
+                    &el_alpha     &el_rho       &trans        &el_tau       &el_gamma       &el_mu        &el_nu        &trans        &el_iota      &el_omikron  
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─┤
                     &el_zeta      &el_xi        &el_chi       &el_delta     &el_theta       &el_kappa     &el_eta       &de_ae        &de_oe        &de_ue       
                 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯─┤
