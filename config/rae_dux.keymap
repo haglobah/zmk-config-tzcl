@@ -34,6 +34,8 @@
 
 #define MEH(KEY) LS(LC(LA(LG(KEY))))
 
+ZMK_UNICODE_SINGLE( sym_lozenge,  N2, N5,  C,  A)
+
 / {
     macros {
         ZMK_MACRO(scope, wait-ms = <1>; tap-ms = <1>; bindings = <&kp COLON &kp COLON>;)
@@ -148,28 +150,28 @@
 
 		sym_layer {
 			bindings = <
-                   &kp APOS     &kp LT        &kp GT        &kp DQT            &kp AMPS           &scope              &kp DOT          &kp LBRC                 &kp RBRC      &kp PRCNT
-                   &kp EXCL     &kp MINUS     &kp PLUS      &kp EQUAL          &kp PIPE           &kp COLON           &kp HASH         &kp LPAR                 &kp RPAR      &kp AT
-                   &kp CARET    &kp FSLH      &kp STAR      &kp BSLH           &kp TILDE          &lambda             &kp DLLR         &kp LBKT                 &kp RBKT      &kp QMARK
-				 /*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans                 /*&             &*/
+                   &kp APOS     &de_ae        &de_oe        &de_ue             &kp AMPS           &scope              &sym_lozenge     &kp LBRC       &kp RBRC      &kp UNDER
+                   &kp EXCL     &kp MINUS     &kp PLUS      &kp EQUAL          &kp PIPE           &kp PRCNT           &kp HASH         &kp LPAR       &kp RPAR      &kp AT
+                   &kp CARET    &kp FSLH      &kp STAR      &kp BSLH           &kp TILDE          &lambda             &kp DLLR         &kp LBKT       &kp RBKT      &kp QMARK
+				 /*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans       /*&             &*/
 			>;
 		};
 
 		num_layer {
 			bindings = <
-                   &kp UNDER    &kp N6        &kp N5        &kp N4             &kp PLUS           &kp STAR            &kp F4           &kp F5                   &kp F6        &kp F10
-                   &kp DOT      &kp N3        &kp N2        &kp N1             &kp MINUS          &kp LSHFT           &kp F1           &kp F2                   &kp F3        &kp F11
-                   &kp COMMA    &kp N9        &kp N8        &kp N7             &kp EQUAL          &kp COLON           &kp F7           &kp F8                   &kp F9        &kp F12
-				 /*&            &*/           &trans        &trans             &kp N0             &kp N0              &trans           &trans                 /*&             &*/
+                   &kp UNDER    &kp N6        &kp N5        &kp N4             &kp PLUS           &kp STAR            &kp F4           &kp F5         &kp F6        &kp F10
+                   &kp DOT      &kp N3        &kp N2        &kp N1             &kp MINUS          &kp LSHFT           &kp F1           &kp F2         &kp F3        &kp F11
+                   &kp COMMA    &kp N9        &kp N8        &kp N7             &kp EQUAL          &kp COLON           &kp F7           &kp F8         &kp F9        &kp F12
+				 /*&            &*/           &trans        &trans             &kp N0             &kp N0              &trans           &trans       /*&             &*/
 			>;
 		};
 
 		nav_layer {
 			bindings = <
-                   &kp MEH(T)   &trans        &trans        &trans             &bt BT_CLR         &bt BT_PRV          &bt BT_NXT       &trans                   &trans        &kp MEH(T)
-                   &sk LALT     &sk LGUI      &sk LSHFT     &sk LCTRL          &trans             &trans              &kp LEFT         &kp DOWN                 &kp UP        &kp RIGHT
-                   &trans       &kp CUT       &kp COPY      &kp PASTE          &trans             &trans              &kp HOME         &kp K_PREV               &kp K_NEXT    &kp END
-				 /*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans             /*&             &*/
+                   &kp MEH(T)   &trans        &trans        &trans             &bt BT_CLR         &bt BT_PRV          &bt BT_NXT       &trans         &trans        &kp MEH(T)
+                   &sk LALT     &sk LGUI      &sk LSHFT     &sk LCTRL          &trans             &trans              &kp LEFT         &kp DOWN       &kp UP        &kp RIGHT
+                   &trans       &kp CUT       &kp COPY      &kp PASTE          &trans             &trans              &kp HOME         &kp K_PREV     &kp K_NEXT    &kp END
+				 /*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans       /*&             &*/
 			>;
 		};
 
