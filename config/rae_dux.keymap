@@ -37,7 +37,7 @@
 
 #define DO_CUT   LC(X)
 #define DO_COPY  LC(C)
-#define Do_PASTE LC(V)
+#define DO_PASTE LC(V)
 
 ZMK_UNICODE_SINGLE( sym_lozenge,  N2, N5,  C,  A)
 
