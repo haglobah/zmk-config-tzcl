@@ -30,8 +30,8 @@
 #define NAV   3
 #define LANG_L  4
 
-#define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24  // left hand
-#define KEYS_R 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29  // right hand
+#define KEYS_LEFT 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24  // left hand
+#define KEYS_RIGHT 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29  // right hand
 #define THUMBS 30 31 32 33 34 35                        // thumbs
 
 #define DO_CUT   LC(X)
@@ -44,7 +44,7 @@ ZMK_UNICODE_SINGLE( sym_lozenge,  N2, N5,  C,  A)
     macros {
         ZMK_MACRO(scope, wait-ms = <1>; tap-ms = <1>; bindings = <&kp COLON &kp COLON>;)
         ZMK_MACRO(lambda, wait-ms = <1>; tap-ms = <1>; bindings = <&kp L &kp A &kp M &kp B &kp D &kp A>;)
-        ZMK_MACRO(term, wait-ms = <1>; tap-ms = <1>; bindings = <&kp LGUI &kp T &kp E &kp R &kp M &kp RET>;)
+        // ZMK_MACRO(term, wait-ms = <1>; tap-ms = <1>; bindings = <&kp LGUI &kp T &kp E &kp R &kp M &kp RET>;)
     };
 
     combos {
@@ -101,7 +101,7 @@ ZMK_UNICODE_SINGLE( sym_lozenge,  N2, N5,  C,  A)
             quick-tap-ms = <0>;
             global-quick-tap-ms = <100>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-key-positions = <KEYS_RIGHT THUMBS>;
         };
 
         rhm: right_hand_positional_hold_tap {
@@ -113,7 +113,7 @@ ZMK_UNICODE_SINGLE( sym_lozenge,  N2, N5,  C,  A)
             quick-tap-ms = <0>;
             global-quick-tap-ms = <100>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-key-positions = <KEYS_LEFT THUMBS>;
         };
 
         b_lt: base_layer_hold_tap {
@@ -177,7 +177,7 @@ ZMK_UNICODE_SINGLE( sym_lozenge,  N2, N5,  C,  A)
 		nav_layer {
 			bindings = <
                 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                     &term         &kp LGUI(TAB) &kp LGUI(CARET)  ___        &bt BT_CLR     &bt BT_PRV    &bt BT_NXT    ___           ___           &term
+                     ___           &kp LGUI(TAB) &kp LGUI(CARET)  ___        &bt BT_CLR     &bt BT_PRV    &bt BT_NXT    ___           ___           ___  
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                      &sk LALT      &sk LGUI      &sk LSHFT     &sk LCTRL     ___            ___           &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
