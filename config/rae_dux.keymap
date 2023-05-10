@@ -35,11 +35,9 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // right hand
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                      // thumbs
 
-#define CT   LC(X)
-#define CPY  LC(C)
-#define PSTE LC(V)
-
-#define MEH(KEY) LS(LC(LA(LG(KEY))))
+#define DO_CUT   LC(X)
+#define DO_COPY  LC(C)
+#define Do_PASTE LC(V)
 
 ZMK_UNICODE_SINGLE( sym_lozenge,  N2, N5,  C,  A)
 
@@ -184,7 +182,7 @@ ZMK_UNICODE_SINGLE( sym_lozenge,  N2, N5,  C,  A)
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                      &sk LALT      &sk LGUI      &sk LSHFT     &sk LCTRL     ___            ___           &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                     ___           &kp CUT       &kp COPY      &kp PASTE     ___            ___           &kp HOME      &kp K_PREV    &kp K_NEXT    &kp END
+                     ___           &kp DO_CUT    &kp DO_COPY   &kp DO_PASTE  ___            ___           &kp HOME      &kp K_PREV    &kp K_NEXT    &kp END
                 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┴───────────────────────────╯
 				 /*&            &*/              ___           ___           ___            ___           ___           ___          /*&             &*/
                 //                             ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯                             
