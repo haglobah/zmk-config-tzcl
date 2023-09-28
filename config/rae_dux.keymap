@@ -71,24 +71,34 @@ ZMK_UNICODE_SINGLE( sym_lozenge,  N2, N5,  C,  A)
         COMBO(caps_word_left, &caps_word, 13 14, COMBO_TIME)
         COMBO(caps_word_right, &caps_word, 15 16, COMBO_TIME)
 
-        COMBO(grave, &kp GRAVE, 1 2, COMBO_TIME)
-        COMBO(scope, &scope, 2 3, COMBO_TIME)
-        COMBO(hash, &kp HASH, 6 7, COMBO_TIME)
-        COMBO(semicolon, &kp SEMI, 7 8, COMBO_TIME)
+        COMBO(excl, &kp EXCL, 1 11, COMBO_TIME)
+        COMBO(grave, &kp GRAVE, 2 12, COMBO_TIME)
+        COMBO(scope, &scope, 3 13, COMBO_TIME)
+        COMBO(caret, &kp CARET, 4 14, COMBO_TIME)
+        COMBO(lpar, &kp LPAR, 11 12, COMBO_TIME)
+        COMBO(lbrc, &kp LBRC, 11 13, COMBO_TIME)
+        COMBO(lbkt, &kp LBKT, 12 13, COMBO_TIME)
+        // free spot: COMBO(.., &kp .., 11 21, ALL)
+        COCOMBO_TIME(bslash, &kp BSLH, 12 22, COMBO_TIME)
+        COMBO(pipe, &kp PIPE, 13 23, COMBO_TIME)
+        COMBO(tilde, &kp TILDE, 14 24, COMBO_TIME)
         COMBO(equal, &kp EQUAL, 21 22, COMBO_TIME)
+        COMBO(underscore, &kp UNDER, 22 23, COMBO_TIME)
+
+        COMBO(percent, &kp PRCNT, 5 15, COMBO_TIME)
+        COMBO(hash, &kp HASH, 6 16, COMBO_TIME)
+        COMBO(semicolon, &kp SEMI, 7 17, COMBO_TIME)
+        COMBO(at, &kp AT, 8 18, COMBO_TIME)
+        COMBO(rbkt, &kp RBKT, 16 17, COMBO_TIME)
+        COMBO(rbrc, &kp RBRC, 16 18, COMBO_TIME)
+        COMBO(rpar, &kp RPAR, 17 18, COMBO_TIME)
+        COMBO(dollar, &kp DLLR, 15 25, COMBO_TIME)
+        COMBO(ampersand, &kp AMPS, 16 26, COMBO_TIME)
+        COMBO(plus, &kp PLUS, 17 27, COMBO_TIME)
+        COMBO(star, &kp STAR, 18 28, COMBO_TIME)
+        COMBO(minus, &kp MINUS, 26 27, COMBO_TIME)
         COMBO(colon, &kp COLON, 27 28, COMBO_TIME)
 
-        COMBO(lpar, &kp LPAR, 11 12, COMBO_TIME)
-        COMBO(rpar, &kp RPAR, 17 18, COMBO_TIME)
-        COMBO(lbkt, &kp LBKT, 12 13, COMBO_TIME)
-        COMBO(rbkt, &kp RBKT, 16 17, COMBO_TIME)
-        COMBO(lbrc, &kp LBRC, 11 13, COMBO_TIME)
-        COMBO(rbrc, &kp RBRC, 16 18, COMBO_TIME)
-
-        COMBO(minus, &kp MINUS, 26 27, COMBO_TIME)
-        COMBO(underscore, &kp UNDER, 22 23, COMBO_TIME)
-        
-        COMBO(switch_lang, &sl LANG_L, 21 23, COMBO_TIME)
     };
 
     behaviors {
@@ -137,11 +147,11 @@ ZMK_UNICODE_SINGLE( sym_lozenge,  N2, N5,  C,  A)
 		sym_layer {
 			bindings = <
                 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                    &kp APOS       &de_ae        &de_oe        &de_ue        &kp AMPS       &scope        &sym_lozenge  &kp LBRC      &kp RBRC      &kp UNDER
+                    &kp APOS       &de_ae        &de_oe        &de_ue        &kp HASH       &scope        &sym_lozenge  &kp LBKT      &kp RBKT      &kp UNDER
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                    &kp EXCL       &kp MINUS     &kp PLUS      &kp EQUAL     &kp PIPE       &kp PRCNT     &kp HASH      &kp LPAR      &kp RPAR      &kp AT
+                    &kp EXCL       &kp MINUS     &kp PLUS      &kp EQUAL     &kp PIPE       &kp AMPS     &kp PRCNT      &kp LBRC      &kp RBRC      &kp AT
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                    &kp CARET      &kp FSLH      &kp STAR      &kp BSLH      &kp TILDE      &lambda       &kp DLLR      &kp LBKT      &kp RBKT      &kp QMARK
+                    &kp CARET      &kp FSLH      &kp STAR      &kp BSLH      &kp TILDE      &lambda       &kp DLLR      &kp LT        &kp GT        &kp FSLH
                 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┴───────────────────────────╯
 				 /*&            &*/              ___           ___           ___            ___           ___           ___          /*&             &*/
                 //                             ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯                             
@@ -153,7 +163,7 @@ ZMK_UNICODE_SINGLE( sym_lozenge,  N2, N5,  C,  A)
                 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                      &kp UNDER     &kp N6        &kp N5        &kp N4        &kp PLUS       &kp STAR      &kp F4        &kp F5        &kp F6        &kp F10
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                     &kp DOT       &kp N3        &kp N2        &kp N1        &kp MINUS      &kp LSHFT     &kp F1        &kp F2        &kp F3        &kp F11
+                     &kp DOT       &kp N3        &kp N2        &kp N1        &kp N0         &kp LSHFT     &kp F1        &kp F2        &kp F3        &kp F11
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                      &kp COMMA     &kp N9        &kp N8        &kp N7        &kp EQUAL      &kp COLON     &kp F7        &kp F8        &kp F9        &kp F12
                 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┴───────────────────────────╯
@@ -165,7 +175,7 @@ ZMK_UNICODE_SINGLE( sym_lozenge,  N2, N5,  C,  A)
 		nav_layer {
 			bindings = <
                 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                     ___           &kp LG(TAB) &kp LG(CARET)  ___        &bt BT_CLR     &bt BT_PRV    &bt BT_NXT    ___           ___           ___  
+                     ___           &kp LG(TAB)  &kp LG(GRAVE)  ___           &bt BT_CLR     &bt BT_PRV    &bt BT_NXT    ___           ___           ___  
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                      &sk LALT      &sk LGUI      &sk LSHFT     &sk LCTRL     ___            ___           &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
