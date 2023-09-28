@@ -97,9 +97,9 @@ ZMK_UNICODE_SINGLE( sym_lozenge,  N2, N5,  C,  A)
             label = "LEFT_POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            global-quick-tap-ms = <100>;
+            tapping-term-ms = <230>;
+            quick-tap-ms = <100>;
+            global-quick-tap;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_RIGHT THUMBS>;
         };
@@ -109,24 +109,12 @@ ZMK_UNICODE_SINGLE( sym_lozenge,  N2, N5,  C,  A)
             label = "RIGHT_POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            global-quick-tap-ms = <100>;
+            tapping-term-ms = <230>;
+            quick-tap-ms = <100>;
+            global-quick-tap;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_LEFT THUMBS>;
         };
-
-        b_lt: base_layer_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BASE_LAYER_HOLD_TAP";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            global-quick-tap-ms = <100>;
-            bindings = <&mo>, <&kp>;
-        };
-
     };
 
 	keymap {
@@ -141,7 +129,7 @@ ZMK_UNICODE_SINGLE( sym_lozenge,  N2, N5,  C,  A)
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                      &kp Z         &kp X         &kp C         &kp D         &kp V          &kp K         &kp H         &kp COMMA     &kp DOT       &kp FSLH
                 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-				 /*&            &*/            &b_lt NAV TAB  &b_lt SYM BSPC &b_lt NUM DEL  &b_lt NUM RET &b_lt SYM SPC &b_lt NAV ESC  /*&             &*/
+				 /*&            &*/              &lt NAV TAB   &lt SYM BSPC  &lt NUM DEL    &lt NUM RET   &lt SYM SPC   &lt NAV ESC  /*&             &*/
                 //                             ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯                             
 			>;
 		};
