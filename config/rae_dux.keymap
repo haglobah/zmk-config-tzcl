@@ -151,7 +151,7 @@ ZMK_UNICODE_SINGLE(sym_almost,  N2, N2, N4, N8)
 		sym_layer {
 			bindings = <
                 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                    &kp APOS       &kp EXCL      &kb LBKT      &kp RBKT      &sym_estimates &scope        &sym_lozenge  &de_ue        &kp AT        &kp UNDER
+                    &kp APOS       &kp EXCL      &kp LBKT      &kp RBKT      &sym_estimates &scope        &sym_lozenge  &de_ue        &kp AT        &kp UNDER
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                     &de_ae         &kp MINUS     &kp PLUS      &kp EQUAL     &sym_unequal   &kp AMPS     &kp PRCNT      &kp LBRC      &kp RBRC      &de_oe 
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
