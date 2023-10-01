@@ -38,7 +38,9 @@
 #define DO_COPY  LC(C)
 #define DO_PASTE LC(V)
 
-ZMK_UNICODE_SINGLE( sym_lozenge,  N2, N5,  C,  A)
+ZMK_UNICODE_SINGLE(sym_lozenge, N2, N5, C, A)
+ZMK_UNICODE_SINGLE(sym_estimates, N2, N2, N5, N9)
+ZMK_UNICODE_SINGLE(sym_unequal,  N2, N2, N6, N0)
 
 / {
     macros {
@@ -147,9 +149,9 @@ ZMK_UNICODE_SINGLE( sym_lozenge,  N2, N5,  C,  A)
 		sym_layer {
 			bindings = <
                 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                    &kp APOS       &de_ae        &de_oe        &de_ue        &kp HASH       &scope        &sym_lozenge  &kp LBKT      &kp RBKT      &kp UNDER
+                    &kp APOS       &de_ae        &de_oe        &de_ue        &sym_estimates &scope        &sym_lozenge  &kp LBKT      &kp RBKT      &kp UNDER
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                    &kp EXCL       &kp MINUS     &kp PLUS      &kp EQUAL     &kp PIPE       &kp AMPS     &kp PRCNT      &kp LBRC      &kp RBRC      &kp AT
+                    &kp EXCL       &kp MINUS     &kp PLUS      &kp EQUAL     &sym_unequal   &kp AMPS     &kp PRCNT      &kp LBRC      &kp RBRC      &kp AT
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                     &kp CARET      &kp FSLH      &kp STAR      &kp BSLH      &kp TILDE      &lambda       &kp DLLR      &kp LT        &kp GT        &kp FSLH
                 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┴───────────────────────────╯
