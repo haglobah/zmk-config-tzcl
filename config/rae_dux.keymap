@@ -41,6 +41,7 @@
 ZMK_UNICODE_SINGLE(sym_lozenge, N2, N5, C, A)
 ZMK_UNICODE_SINGLE(sym_estimates, N2, N2, N5, N9)
 ZMK_UNICODE_SINGLE(sym_unequal,  N2, N2, N6, N0)
+ZMK_UNICODE_SINGLE(sym_almost,  N2, N2, N4, N8)
 
 / {
     macros {
@@ -153,7 +154,7 @@ ZMK_UNICODE_SINGLE(sym_unequal,  N2, N2, N6, N0)
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                     &kp EXCL       &kp MINUS     &kp PLUS      &kp EQUAL     &sym_unequal   &kp AMPS     &kp PRCNT      &kp LBRC      &kp RBRC      &kp AT
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                    &kp CARET      &kp FSLH      &kp STAR      &kp BSLH      &kp TILDE      &lambda       &kp DLLR      &kp LT        &kp GT        &kp FSLH
+                    &kp CARET      &kp FSLH      &kp STAR      &kp BSLH      &sym_almost    &lambda       &kp DLLR      &kp LT        &kp GT        &kp FSLH
                 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┴───────────────────────────╯
 				 /*&            &*/              ___           ___           ___            ___           ___           ___          /*&             &*/
                 //                             ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯                             
