@@ -151,9 +151,9 @@ ZMK_UNICODE_SINGLE(sym_almost,  N2, N2, N4, N8)
 		sym_layer {
 			bindings = <
                 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                    &kp APOS       &de_ae        &de_oe        &de_ue        &sym_estimates &scope        &sym_lozenge  &kp LBKT      &kp RBKT      &kp UNDER
+                    &kp APOS       &kp EXCL      &kb LBKT      &kp RBKT      &sym_estimates &scope        &sym_lozenge  &kp de_ue      &kp AT        &kp UNDER
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                    &kp EXCL       &kp MINUS     &kp PLUS      &kp EQUAL     &sym_unequal   &kp AMPS     &kp PRCNT      &kp LBRC      &kp RBRC      &kp AT
+                    &de_ae         &kp MINUS     &kp PLUS      &kp EQUAL     &sym_unequal   &kp AMPS     &kp PRCNT      &kp LBRC      &kp RBRC      &de_oe 
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                     &kp CARET      &kp FSLH      &kp STAR      &kp BSLH      &sym_almost    &lambda       &kp DLLR      &kp LT        &kp GT        &kp FSLH
                 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┴───────────────────────────╯
