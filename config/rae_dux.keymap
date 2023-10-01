@@ -86,6 +86,7 @@ ZMK_UNICODE_SINGLE(sym_almost,  N2, N2, N4, N8)
         COMBO(pipe, &kp PIPE, 13 23, COMBO_TIME)
         COMBO(tilde, &kp TILDE, 14 24, COMBO_TIME)
         COMBO(equal, &kp EQUAL, 21 22, COMBO_TIME)
+        COMBO(switch_lang, &sl LANG_L, 21 23, COMBO_TIME)
         COMBO(underscore, &kp UNDER, 22 23, COMBO_TIME)
 
         COMBO(percent, &kp PRCNT, 5 15, COMBO_TIME)
