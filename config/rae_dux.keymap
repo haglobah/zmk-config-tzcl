@@ -49,7 +49,7 @@ ZMK_UNICODE_SINGLE(em_dash, N2, N0, N1, N4)
     macros {
         ZMK_MACRO(scope, wait-ms = <1>; tap-ms = <1>; bindings = <&kp COLON &kp COLON>;)
         ZMK_MACRO(lambda, wait-ms = <1>; tap-ms = <1>; bindings = <&kp L &kp A &kp M &kp B &kp D &kp A>;)
-        ZMK_MACRO(site_link, wait-ms = <1>; tap-ms = <1>; bindings = <&kp LC(L) &kp LC(C) &kp LG(TAB) &kp LC(V)>;)
+        ZMK_MACRO(site_link, wait-ms = <20>; tap-ms = <20>; bindings = <&kp LC(L) &kp LC(C) &kp LG(TAB) &kp LC(V)>;)
         ZMK_MACRO(term_paste, wait-ms = <1>; tap-ms = <1>; bindings = <&kp LC(LS(V))>;)
         // ZMK_MACRO(term, wait-ms = <1>; tap-ms = <1>; bindings = <&kp LGUI &kp T &kp E &kp R &kp M &kp RET>;)
     };
