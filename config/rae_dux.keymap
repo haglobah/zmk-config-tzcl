@@ -34,10 +34,6 @@
 #define KEYS_RIGHT 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29  // right hand
 #define THUMBS 30 31 32 33 34 35                        // thumbs
 
-#define DO_CUT   LC(X)
-#define DO_COPY  LC(C)
-#define DO_PASTE LC(V)
-
 ZMK_UNICODE_SINGLE(sym_lozenge, N2, N5, C, A)
 ZMK_UNICODE_SINGLE(sym_estimates, N2, N2, N5, N9)
 ZMK_UNICODE_SINGLE(sym_unequal, N2, N2, N6, N0)
@@ -51,7 +47,11 @@ ZMK_UNICODE_SINGLE(em_dash, N2, N0, N1, N4)
         ZMK_MACRO(scope, wait-ms = <1>; tap-ms = <1>; bindings = <&kp COLON &kp COLON>;)
         ZMK_MACRO(lambda, wait-ms = <1>; tap-ms = <1>; bindings = <&kp L &kp A &kp M &kp B &kp D &kp A>;)
         ZMK_MACRO(site_link, wait-ms = <20>; tap-ms = <20>; bindings = <&kp LC(L) &kp LC(C) &kp LG(TAB) &kp LC(V)>;)
+        ZMK_MACRO(site_link_cut, wait-ms = <20>; tap-ms = <20>; bindings = <&kp LC(L) &kp LC(C) &kp LC(W) &kp LG(TAB) &kp LC(V)>;)
+        ZMK_MACRO(ret_swap, wait-ms = <20>; tap-ms = <20>; bindings = <&kp RET &kp LG(TAB)>;)
         ZMK_MACRO(term_paste, wait-ms = <1>; tap-ms = <1>; bindings = <&kp LC(LS(V))>;)
+        ZMK_MACRO(obs_connect, wait-ms = <1>; tap-ms = <1>; bindings = <&kp MINUS &kp LT &kp GT &kp MINUS &kp SPC>;)
+        ZMK_MACRO(obs_link, wait-ms = <1>; tap-ms = <1>; bindings = <&kp LBKT &kp LBKT>;)
         // ZMK_MACRO(term, wait-ms = <1>; tap-ms = <1>; bindings = <&kp LGUI &kp T &kp E &kp R &kp M &kp RET>;)
     };
 
@@ -85,7 +85,7 @@ ZMK_UNICODE_SINGLE(em_dash, N2, N0, N1, N4)
         COMBO(lbrc, &kp LBRC, 11 13, COMBO_TIME)
         COMBO(lbkt, &kp LBKT, 12 13, COMBO_TIME)
         // COMBO(..., &kp .., 13 14, COMBO_TIME)
-        // COMBO(.., &kp .., 11 21, COMBO_TIME)
+        COMBO(super_r, &kp LG(R), 11 21, COMBO_TIME)
         COMBO(bslash, &kp BSLH, 12 22, COMBO_TIME)
         COMBO(pipe, &kp PIPE, 13 23, COMBO_TIME)
         COMBO(tilde, &kp TILDE, 14 24, COMBO_TIME)
@@ -161,7 +161,7 @@ ZMK_UNICODE_SINGLE(em_dash, N2, N0, N1, N4)
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                     &de_ae         &kp MINUS     &kp PLUS      &kp EQUAL     &sym_unequal   &en_dash       &kp PRCNT     &kp LBRC      &kp RBRC      &de_oe 
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                    &kp CARET      &kp FSLH      &kp STAR      &kp BSLH      &sym_almost    &em_dash       &kp DLLR      &kp LT        &kp GT        &kp FSLH
+                    &kp CARET      &kp FSLH      &obs_connect  &obs_link     &sym_almost    &em_dash       &kp DLLR      &kp LT        &kp GT        &kp FSLH
                 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┴───────────────────────────╯
 			 /*&            &*/               ___           ___           ___            ___           ___           ___          /*&             &*/
                 //                             ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯                             
@@ -189,7 +189,7 @@ ZMK_UNICODE_SINGLE(em_dash, N2, N0, N1, N4)
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                      &sk LALT      &sk LGUI      &sk LSHFT     &sk LCTRL     ___            ___           &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                     ___           &kp DO_CUT    &site_link    ___           &term_paste    ___           &kp HOME      &kp K_PREV    &kp K_NEXT    &kp END
+                     ___          &site_link_cut &site_link    &ret_swap     &term_paste    ___           &kp HOME      &kp K_PREV    &kp K_NEXT    &kp END
                 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┴───────────────────────────╯
 			 /*&            &*/               ___           ___           ___            ___           ___           ___          /*&             &*/
                 //                             ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯                             
