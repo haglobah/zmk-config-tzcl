@@ -1,16 +1,22 @@
-* rae-dux
+# rae-dux
 Endgame wireless split ergo keeb with low-profile switches and keycaps
 
-[[https://i.imgur.com/UK9RJ01.jpg]]
+Built with the help of [this guide](https://www.tzcl.me/posts/rae-dux) and [this guide](https://hackaday.io/project/187234-rae-dux-keyboard-build).
 
-** Features
+Layout heavily inspired by 
++ https://github.com/tzcl/zmk-config
++ Miryoku, and
++ https://github.com/urob/zmk-config
+
+## Features
 1. Minimal design - no diodes, LEDs, OLEDs
 2. Ultra low-profile and transportable
-3. Colemak with home row mods -- really comfy
-4. Caps word for typing identifiers like =THIS_IS_A_CONSTANT=
+3. Colemak with home row mods
+4. [Various additional combos](https://github.com/haglobah/zmk-config-tzcl/blob/fa53fda638670d4e45a3f576a933e804a0bd88eb/config/rae_dux.keymap#L79C1-L111C1)
 
-** Layout
-#+begin_example
+## Layout
+
+```
 /* ,----------------------------------.                ,----------------------------------.
  * |  Q   |  W   |  F   |  P   |  B   |                |  J   |  L   |  U   |  Y   |  '   |
  * |------+------+------+------+------|                |------+------+------+------+------|
@@ -22,11 +28,11 @@ Endgame wireless split ergo keeb with low-profile switches and keycaps
  *                      `--------------------'  `--------------------'
 
 /* ,----------------------------------.                ,----------------------------------.
- * |  '   |  ä   |  ö   |  ü   |  &   |                |  ::  |  ◊   |  {   |  }   |  _   |
+ * |  '   |  ä   |  ö   |  ü   |  #   |                |  ::  |  ◊   |  [   |  ]   |  _   |
  * |------+------+------+------+------|                |------+------+------+------+------|
- * |  !   |  -   |  +   |  =   |  |   |                |  %   |  #   |  (   |  )   |  @   |
+ * |  !   |  -   |  +   |  =   |  |   |                |  &   |  %   |  {   |  }   |  @   |
  * |------+------+------+------+------|                |------+------+------+------+------|
- * |  ^   |  /   |  *   |  \   |  ~   |                |lambda|  $   |  [   |  ]   |  ?   |
+ * |  ^   |  /   |  *   |  \   |  ~   |                |lambda|  $   |  <   |  >   |  /   |
  * `------+------+------+------+------+------.  ,------+------+------+------+------+------|
  *                      |      |      |      |  |      |      |      |
  *                      `--------------------'  `--------------------'
@@ -42,7 +48,7 @@ Endgame wireless split ergo keeb with low-profile switches and keycaps
  *                      `--------------------'  `--------------------'
 
 /* ,----------------------------------.                ,----------------------------------.
- * | term |      |      |      |BT_CLR|                |BT_PRV|BT_NXT|      |      | term |
+ * | term | ⌥+TAB|  ⌥+^ |      |BT_CLR|                |BT_PRV|BT_NXT|      |      | term |
  * |------+------+------+------+------|                |------+------+------+------+------|
  * |  ⌥   |  ⌘   |  ⇧   |  ⌃   |      |                |      | LEFT | DOWN |  UP  | RGHT |
  * |------+------+------+------+------|                |------+------+------+------+------|
@@ -60,22 +66,8 @@ Endgame wireless split ergo keeb with low-profile switches and keycaps
  * `------+------+------+------+------+------.  ,------+------+------+------+------+------|
  *                      |      |      |      |  |      |      |      |
  *                      `--------------------'  `--------------------'
-#+end_example
-
-Base layer:
-+ Colemak Mod-DH
-
-Symbol layer:
-+ Inspired by Getreuer's symbol layer as most of my programming is in C++/Scheme/Clojure (and soon JavaScript)
-+ I used to have my brackets like the Seniply layout because when working in IDEs, normally they will insert the closing bracket for you. However, I found that being able to roll both brackets to be important.
-
-Number layer:
-+ Inspired by Pnohty's numpad+, I reversed the order of the numbers so the lowest digits are in the most comfortable positions (following Benford's law)
-+ Function keys are on the right hand, on Mac, these send the "actions" by default instead of the actual function keys (e.g., volume up/down are sent when you hit F11/F12)
-
-Nav layer:
-+ The mods on the left-hand are sticky, so I can hit them and combine them with keys on other layers
+```
 
 Lang layer:
-+ A greek and german one-shot layer, that I can access by pressing 'x' and 'd' at the same time. 
-+ The chars on the shifts are moved outwards, so that I can still use them in caps.
+- A greek and german one-shot layer, that I can access by pressing 'x' and 'd' at the same time. 
+- The chars on the shifts are moved outwards, so that I can still use them in caps.
