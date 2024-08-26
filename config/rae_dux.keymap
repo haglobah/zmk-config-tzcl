@@ -45,7 +45,7 @@ ZMK_UNICODE_SINGLE(em_dash, N2, N0, N1, N4)
 / {
     macros {
         ZMK_MACRO(scope, wait-ms = <1>; tap-ms = <1>; bindings = <&kp COLON &kp COLON>;)
-        ZMK_MACRO(lambda, wait-ms = <1>; tap-ms = <1>; bindings = <&kp L &kp A &kp M &kp B &kp D &kp A>;)
+        ZMK_MACRO(keyword, wait-ms = <1>; tap-ms = <1>; bindings = <&kp HASH &kp COLON>;)
         ZMK_MACRO(site_link, wait-ms = <20>; tap-ms = <20>; bindings = <&kp LC(L) &kp LC(C) &kp LG(TAB) &kp LC(V)>;)
         ZMK_MACRO(site_link_cut, wait-ms = <20>; tap-ms = <20>; bindings = <&kp LC(L) &kp LC(C) &kp LC(W) &kp LG(TAB) &kp LC(V)>;)
         ZMK_MACRO(ret_swap, wait-ms = <20>; tap-ms = <20>; bindings = <&kp RET &kp LG(TAB)>;)
@@ -157,9 +157,9 @@ ZMK_UNICODE_SINGLE(em_dash, N2, N0, N1, N4)
 		sym_layer {
 			bindings = <
                 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                    &sym_euro      &kp EXCL      &kp LBKT      &kp RBKT      &sym_estimates &lambda        &sym_lozenge  &de_ue        &kp AT        &kp UNDER
+                    &sym_euro      &kp EXCL      &kp LBKT      &kp RBKT      &sym_estimates &keyword   &sym_lozenge  &de_ue        &kp AT        &kp UNDER
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                    &de_ae         &kp MINUS     &kp PLUS      &kp EQUAL     &sym_unequal   &en_dash       &kp PRCNT     &kp LBRC      &kp RBRC      &de_oe 
+                    &de_ae         &kp MINUS     &kp PLUS      &kp EQUAL     &sym_unequal   &en_dash   &kp PRCNT     &kp LBRC      &kp RBRC      &de_oe 
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                     &kp CARET      &kp FSLH      &obs_connect  &obs_link     &sym_almost    &em_dash       &kp DLLR      &kp LT        &kp GT        &kp FSLH
                 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┴───────────────────────────╯
