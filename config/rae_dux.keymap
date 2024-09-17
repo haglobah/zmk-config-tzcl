@@ -93,7 +93,7 @@ ZMK_UNICODE_SINGLE(em_dash, N2, N0, N1, N4)
         COMBO(switch_lang, &sl LANG_L, 21 23, COMBO_TIME)
         COMBO(underscore, &kp UNDER, 22 23, COMBO_TIME)
 
-        COMBO(percent, &kp ESC, 7 8, COMBO_TIME)
+        COMBO(the_esc, &kp ESC, 7 8, COMBO_TIME)
         COMBO(percent, &kp PRCNT, 5 15, COMBO_TIME)
         COMBO(hash, &kp HASH, 6 16, COMBO_TIME)
         COMBO(semicolon, &kp SEMI, 7 17, COMBO_TIME)
