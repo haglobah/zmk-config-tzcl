@@ -93,7 +93,6 @@ ZMK_UNICODE_SINGLE(em_dash, N2, N0, N1, N4)
         COMBO(switch_lang, &sl LANG_L, 21 23, COMBO_TIME)
         COMBO(underscore, &kp UNDER, 22 23, COMBO_TIME)
 
-        COMBO(the_esc, &kp ESC, 7 8, COMBO_TIME)
         COMBO(percent, &kp PRCNT, 5 15, COMBO_TIME)
         COMBO(hash, &kp HASH, 6 16, COMBO_TIME)
         COMBO(semicolon, &kp SEMI, 7 17, COMBO_TIME)
@@ -113,15 +112,6 @@ ZMK_UNICODE_SINGLE(em_dash, N2, N0, N1, N4)
     };
 
     behaviors {
-        lt_sk: layer_tap_shift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_SHIFT";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-            bindings = <&lt>, <&sk>;
-        };
         lhm: left_hand_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "LEFT_POSITIONAL_HOLD_TAP";
@@ -159,7 +149,7 @@ ZMK_UNICODE_SINGLE(em_dash, N2, N0, N1, N4)
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                      &kp Z         &kp X         &kp C         &kp D         &kp V          &kp K         &kp H         &kp COMMA     &kp DOT       &kp FSLH
                 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-			 /*&            &*/              &lt NAV TAB   &lt SYM BSPC  &lt NUM DEL    &lt NUM RET   &lt SYM SPC   &lt_sk NAV LSHFT  /*&             &*/
+			 /*&            &*/              &lt NAV TAB   &lt SYM BSPC  &lt NUM DEL    &lt NUM RET   &lt SYM SPC   &lt NAV ESC  /*&             &*/
                 //                             ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯                             
 			>;
 		};
