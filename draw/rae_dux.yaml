@@ -1,0 +1,244 @@
+layout: {qmk_keyboard: obosob/arch_36}
+layers:
+  base:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - {t: A, h: LALT}
+  - {t: R, h: LGUI}
+  - {t: S, h: LSHFT}
+  - {t: T, h: LCTRL}
+  - G
+  - M
+  - {t: N, h: LCTRL}
+  - {t: E, h: RSHFT}
+  - {t: I, h: LGUI}
+  - {t: O, h: RALT}
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - /
+  - {t: TAB, h: nav}
+  - {t: BSPC, h: sym}
+  - {t: DEL, h: num}
+  - {t: RET, h: num}
+  - {t: SPC, h: sym}
+  - {t: ESC, h: nav}
+  sym:
+  - '&sym_euro_lower'
+  - '!'
+  - '['
+  - ']'
+  - '&sym_estimates_lower'
+  - '&keyword'
+  - '&sym_lozenge_lower'
+  - {t: '&de_ue_lower', s: '&de_ue_upper'}
+  - '@'
+  - _
+  - {t: '&de_ae_lower', s: '&de_ae_upper'}
+  - '-'
+  - +
+  - '='
+  - '&sym_unequal_lower'
+  - '&en_dash_lower'
+  - '%'
+  - '{'
+  - '}'
+  - {t: '&de_oe_lower', s: '&de_oe_upper'}
+  - ^
+  - /
+  - '&obs_connect'
+  - '&obs_link'
+  - '&sym_almost_lower'
+  - '&em_dash_lower'
+  - $
+  - <
+  - '>'
+  - /
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  num:
+  - _
+  - '6'
+  - '5'
+  - '4'
+  - +
+  - '*'
+  - F4
+  - F5
+  - F6
+  - F10
+  - .
+  - '3'
+  - '2'
+  - '1'
+  - '0'
+  - LSHFT
+  - F1
+  - F2
+  - F3
+  - F11
+  - ','
+  - '9'
+  - '8'
+  - '7'
+  - '='
+  - ':'
+  - F7
+  - F8
+  - F9
+  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '0', type: held}
+  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  nav:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT CLR
+  - BT CLR
+  - {t: ▽, type: trans}
+  - BT PRV
+  - BT NXT
+  - {t: ▽, type: trans}
+  - {t: LALT, h: sticky}
+  - {t: LGUI, h: sticky}
+  - {t: LSHFT, h: sticky}
+  - {t: LCTRL, h: sticky}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - {t: ▽, type: trans}
+  - '&site_link_cut'
+  - '&site_link'
+  - '&ret_swap'
+  - '&term_paste'
+  - {t: ▽, type: trans}
+  - HOME
+  - PREV
+  - NEXT
+  - END
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  lang:
+  - {t: '&el_sigma_lower', s: '&el_sigma_upper'}
+  - {t: '&el_omega_lower', s: '&el_omega_upper'}
+  - {t: '&el_phi_lower', s: '&el_phi_upper'}
+  - {t: '&el_pi_lower', s: '&el_pi_upper'}
+  - {t: '&el_beta_lower', s: '&el_beta_upper'}
+  - {t: '&el_epsilon_lower', s: '&el_epsilon_upper'}
+  - {t: '&el_lambda_lower', s: '&el_lambda_upper'}
+  - {t: '&el_upsilon_lower', s: '&el_upsilon_upper'}
+  - {t: '&el_psi_lower', s: '&el_psi_upper'}
+  - '&de_eszett_lower'
+  - {t: '&el_alpha_lower', s: '&el_alpha_upper'}
+  - {t: '&el_rho_lower', s: '&el_rho_upper'}
+  - {t: ▽, type: trans}
+  - {t: '&el_tau_lower', s: '&el_tau_upper'}
+  - {t: '&el_gamma_lower', s: '&el_gamma_upper'}
+  - {t: '&el_mu_lower', s: '&el_mu_upper'}
+  - {t: '&el_nu_lower', s: '&el_nu_upper'}
+  - {t: ▽, type: trans}
+  - {t: '&el_iota_lower', s: '&el_iota_upper'}
+  - {t: '&el_omikron_lower', s: '&el_omikron_upper'}
+  - {t: '&el_zeta_lower', s: '&el_zeta_upper'}
+  - {t: '&el_xi_lower', s: '&el_xi_upper', type: held}
+  - {t: '&el_chi_lower', s: '&el_chi_upper'}
+  - {t: '&el_delta_lower', s: '&el_delta_upper', type: held}
+  - {t: '&el_theta_lower', s: '&el_theta_upper'}
+  - {t: '&el_kappa_lower', s: '&el_kappa_upper'}
+  - {t: '&el_eta_lower', s: '&el_eta_upper'}
+  - {t: '&de_ae_lower', s: '&de_ae_upper'}
+  - {t: '&de_oe_lower', s: '&de_oe_upper'}
+  - {t: '&de_ue_lower', s: '&de_ue_upper'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [1, 11]
+  k: '!'
+- p: [2, 12]
+  k: '`'
+- p: [3, 13]
+  k: '&scope'
+- p: [4, 14]
+  k: ^
+- p: [11, 12]
+  k: (
+- p: [11, 13]
+  k: '{'
+- p: [12, 13]
+  k: '['
+- p: [11, 21]
+  k: Gui+ R
+- p: [12, 22]
+  k: \
+- p: [13, 23]
+  k: '|'
+- p: [14, 24]
+  k: '~'
+- p: [21, 22]
+  k: '='
+- p: [21, 23]
+  k: {t: lang, h: sticky}
+- p: [22, 23]
+  k: _
+- p: [5, 15]
+  k: '%'
+- p: [6, 16]
+  k: '#'
+- p: [7, 17]
+  k: ;
+- p: [8, 18]
+  k: '@'
+- p: [16, 17]
+  k: ']'
+- p: [16, 18]
+  k: '}'
+- p: [17, 18]
+  k: )
+- p: [15, 25]
+  k: $
+- p: [16, 26]
+  k: '&'
+- p: [17, 27]
+  k: '*'
+- p: [18, 28]
+  k: +
+- p: [26, 27]
+  k: '-'
+- p: [26, 28]
+  k: '&caps_word'
+- p: [27, 28]
+  k: ':'

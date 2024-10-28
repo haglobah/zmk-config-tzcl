@@ -1,0 +1,8 @@
+parse_config:
+  zmk_preamble: "#include \"../zmk-nodefree-config/keypos_def/keypos_36keys.h>\""
+  zmk_additional_includes:
+    - "modules/helpers/include"
+
+draw_config:
+  footer_text: "haglobah/zmk-config-tzcl"
+  dark_mode: auto

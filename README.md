@@ -16,6 +16,10 @@ Layout heavily inspired by
 
 ## Layout
 
+![](./draw/rae_dux.svg)
+
+(when in doubt, code >> svg >> markdown below)
+
 ```
 /* ,----------------------------------.                ,----------------------------------.
  * |  Q   |  W   |  F   |  P   |  B   |                |  J   |  L   |  U   |  Y   |  '   |
