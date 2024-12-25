@@ -29,7 +29,7 @@
 #define NUM   2
 #define NAV   3
 #define LANG_L  4
-#define GAME_L  4
+#define GAME_L  5
 
 #define KEYS_LEFT 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24  // left hand
 #define KEYS_RIGHT 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29  // right hand
