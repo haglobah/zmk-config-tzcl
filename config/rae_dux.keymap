@@ -53,7 +53,7 @@ ZMK_UNICODE_SINGLE(em_dash, N2, N0, N1, N4)
         ZMK_MACRO(term_paste, wait-ms = <1>; tap-ms = <1>; bindings = <&kp LC(LS(V))>;)
         ZMK_MACRO(obs_connect, wait-ms = <1>; tap-ms = <1>; bindings = <&kp MINUS &kp LT &kp GT &kp MINUS &kp SPC>;)
         ZMK_MACRO(obs_link, wait-ms = <1>; tap-ms = <1>; bindings = <&kp LBKT &kp LBKT>;)
-        // ZMK_MACRO(term, wait-ms = <1>; tap-ms = <1>; bindings = <&kp LGUI &kp T &kp E &kp R &kp M &kp RET>;)
+        ZMK_MACRO(md_hrule, wait-ms = <1>; tap-ms = <1>; bindings = <&kp MINUS &kp MINUS &kp MINUS>;)
     };
 
     combos {
@@ -164,7 +164,7 @@ ZMK_UNICODE_SINGLE(em_dash, N2, N0, N1, N4)
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                     &de_ae         &kp MINUS     &kp PLUS      &kp EQUAL     &sym_unequal   &en_dash   &kp PRCNT     &kp LBRC      &kp RBRC      &de_oe 
                 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                    &kp CARET      &kp FSLH      &obs_connect  &obs_link     &sym_almost    &em_dash       &kp DLLR      &kp LT        &kp GT        &kp FSLH
+                    &kp CARET      &md_hrule     &obs_connect  &obs_link     &sym_almost    &em_dash       &kp DLLR      &kp LT        &kp GT        &kp FSLH
                 // ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤├─────────────┼─────────────┼─────────────┴───────────────────────────╯
              /*&            &*/               ___           ___           ___            ___           ___           ___          /*&             &*/
                 //                             ╰─────────────┴─────────────┴─────────────╯╰─────────────┴─────────────┴─────────────╯                             
